@@ -37,10 +37,12 @@ module.exports = {
 	},
 	rules: {
 		// JS
-		'prefer-arrow-callback': 'error',
 		'no-unused-vars': 'off',
 		'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
 		'no-unused-vars': 0,
+		'arrow-body-style': ['error', 'as-needed'],
+		'prefer-arrow-callback': 'error',
+		'consistent-return': 'error',
 
 		// TS
 		'@typescript-eslint/no-unused-vars': [
@@ -93,6 +95,13 @@ module.exports = {
 			{
 				namedComponents: 'arrow-function',
 				unnamedComponents: 'arrow-function',
+			},
+		],
+		'react/self-closing-comp': [
+			'error',
+			{
+				component: true,
+				html: true,
 			},
 		],
 	},
