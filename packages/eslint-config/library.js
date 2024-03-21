@@ -5,10 +5,4 @@ module.exports = {
 		React: true,
 		JSX: true,
 	},
-	ignorePatterns: [
-		// Ignore dotfiles
-		'.*.js',
-		'node_modules/',
-		'dist/',
-	],
 }

@@ -14,10 +14,4 @@ module.exports = {
 		require.resolve('eslint-config-mkw/react-library'),
 		'eslint-config-turbo',
 	],
-	ignorePatterns: [
-		// Ignore dotfiles
-		'.*.js',
-		'node_modules/',
-		'dist/',
-	],
 }
