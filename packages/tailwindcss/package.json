@@ -1,0 +1,15 @@
+{
+  "name": "@repo/tailwindcss",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./tailwind.config.ts",
+    "./global.css": "./global.css"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
