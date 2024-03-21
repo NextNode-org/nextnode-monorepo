@@ -9,6 +9,6 @@
   ],
   "devDependencies": {
     "eslint-config-mkw": "^2.0.4",
-    "eslint-config-turbo": "^1.12.4"
+    "eslint-config-turbo": "^1.13.0"
   }
 }
