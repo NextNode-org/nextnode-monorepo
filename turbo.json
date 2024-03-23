@@ -23,7 +23,14 @@
       "cache": false,
       "persistent": true
     },
-    "test": {},
+    "test": {
+      "inputs": [
+        "src/**/*.tsx",
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "test/**/*.tsx"
+      ]
+    },
     "test:watch": {
       "cache": false
     },
