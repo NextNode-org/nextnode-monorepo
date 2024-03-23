@@ -1,4 +1,4 @@
-import sharedconfig from '@repo/tailwindcss'
+import sharedconfig from '@repo/config-tailwindcss'
 
 import type { Config } from 'tailwindcss'
 
