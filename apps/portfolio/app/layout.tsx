@@ -2,6 +2,9 @@ import './globals.css'
 import '@repo/ui/styles.css'
 import { Inter } from 'next/font/google'
 
+import Footer from '@/components/layout/Footer'
+import Header from '@/components/layout/Header'
+
 import type { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,7 +20,11 @@ type LayoutProps = Readonly<{
 
 const RootLayout = ({ children }: LayoutProps): JSX.Element => (
 	<html lang="en">
-		<body className={inter.className}>{children}</body>
+		<body className={inter.className}>
+			<Header />
+			{children}
+			<Footer />
+		</body>
 	</html>
 )
 
