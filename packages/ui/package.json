@@ -7,7 +7,7 @@
   ],
   "exports": {
     ".": [
-      "./src/Button.tsx"
+      "./index.ts"
     ],
     "./styles.css": "./dist/index.css"
   },
@@ -42,9 +42,11 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "1.0.2",
     "@repo/utils": "workspace:^",
     "class-variance-authority": "0.7.0",
+    "framer-motion": "^11.0.24",
     "lucide-react": "0.358.0"
   }
 }
