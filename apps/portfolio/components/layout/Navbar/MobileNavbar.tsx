@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { Button, Sheet, SheetContent } from '@repo/ui'
+import { Button, Sheet, SheetContent, SheetContentClose } from '@repo/ui'
 import { cn } from '@repo/utils/functions'
 import { Menu } from 'lucide-react'
 
@@ -32,11 +32,16 @@ const MobileNavbar = (): JSX.Element => {
 			</div>
 			<Sheet open={isOpen} onOpenChange={setIsOpen}>
 				<SheetContent
-					side="left"
-					className="flex justify-evenly flex-col gap-20 py-20 text-2xl font-semibold">
+					side="right"
+					defaultClose={false}
+					className="flex justify-evenly bg-background flex-col gap-20 py-20 text-2xl font-semibold">
 					{navbarLinks.map(link => (
 						<NavbarLink key={link.id} link={link} />
 					))}
+					<SheetContentClose
+						size="xl"
+						className="text-primary top-6 right-8"
+					/>
 				</SheetContent>
 			</Sheet>
 		</>
