@@ -10,67 +10,67 @@
         --font-sans: "Roboto";
         --font-title: "League Spartan";
 
-        --background: 0 0% 100%;
-        --foreground: 222.2 47.4% 11.2%;
+        --background: 226 43% 99%;
+        --foreground: 226 52% 0%;
 
-        --muted: 210 40% 96.1%;
-        --muted-foreground: 215.4 16.3% 46.9%;
+        --muted: 46 24% 90%;
+        --muted-foreground: 46 3% 34%;
 
-        --popover: 0 0% 100%;
-        --popover-foreground: 222.2 47.4% 11.2%;
+        --popover: 226 43% 99%;
+        --popover-foreground: 226 52% 0%;
 
-        --border: 214.3 31.8% 91.4%;
-        --input: 214.3 31.8% 91.4%;
+        --card: 226 43% 98%;
+        --card-foreground: 0 0% 0%;
 
-        --card: 0 0% 100%;
-        --card-foreground: 222.2 47.4% 11.2%;
+        --border: 226 12% 94%;
+        --input: 226 12% 94%;
 
-        --primary: 222.2 47.4% 11.2%;
-        --primary-foreground: 210 40% 98%;
+        --primary: 226 100% 61%;
+        --primary-foreground: 0 0% 100%;
 
-        --secondary: 210 40% 96.1%;
-        --secondary-foreground: 222.2 47.4% 11.2%;
+        --secondary: 52.47 98.35% 47.65%;
+        --secondary-foreground: 46 100% 1%;
 
-        --accent: 210 40% 96.1%;
-        --accent-foreground: 222.2 47.4% 11.2%;
+        --accent: 22.64 100% 61%;
+        --accent-foreground: 46 100% 1%;
 
-        --destructive: 0 100% 50%;
-        --destructive-foreground: 210 40% 98%;
+        --destructive: 2 97% 40%;
+        --destructive-foreground: 0 0% 100%;
 
-        --ring: 215 20.2% 65.1%;
+        --ring: 226 100% 61%;
 
         --radius: 0.5rem;
     }
 
     .dark {
-        --background: 224 71% 4%;
-        --foreground: 213 31% 91%;
+        --background: 228 14.29% 6.86%;
+        --foreground: 226 25% 98%;
 
-        --muted: 223 47% 11%;
-        --muted-foreground: 215.4 16.3% 56.9%;
+        --muted: 46 24% 10%;
+        --muted-foreground: 206.04 5.28% 64.27%;
 
-        --accent: 216 34% 17%;
-        --accent-foreground: 210 40% 98%;
+        --popover: 222.86 14.29% 9.61%;
+        --popover-foreground: 226 25% 98%;
 
-        --popover: 224 71% 4%;
-        --popover-foreground: 215 20.2% 65.1%;
+        --card: 222.86 14.29% 9.61%;
+        --card-foreground: 226 25% 99%;
 
-        --border: 216 34% 17%;
-        --input: 216 34% 17%;
+        --border: 226 12% 13%;
+        --input: 226 12% 13%;
 
-        --card: 224 71% 4%;
-        --card-foreground: 213 31% 91%;
+        --primary: 226 100% 61%;
+        --primary-foreground: 0 0% 100%;
 
-        --primary: 210 40% 98%;
-        --primary-foreground: 222.2 47.4% 1.2%;
+        --secondary: 46 100% 61%;
+        --secondary-foreground: 222.86 14.29% 9.61%;
 
-        --secondary: 222.2 47.4% 11.2%;
-        --secondary-foreground: 210 40% 98%;
+        --accent: 22.61 100% 60.98%;
+        --accent-foreground: 222.86 14.29% 9.61%;
 
-        --destructive: 0 63% 31%;
-        --destructive-foreground: 210 40% 98%;
+        --destructive: 2 97% 52%;
+        --destructive-foreground: 0 0% 100%;
 
-        --ring: 216 34% 17%;
+        --ring: 226 100% 61%;
 
         --radius: 0.5rem;
     }
