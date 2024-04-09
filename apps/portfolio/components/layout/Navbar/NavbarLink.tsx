@@ -22,7 +22,8 @@ const NavbarLink = ({
 			key={id}
 			href={href}
 			className={cn(
-				visibleSection === section ? 'text-red-500' : 'text-blue-300',
+				'font-semibold sm:text-xs lg:text-sm',
+				visibleSection === section ? 'text-accent' : 'text-foreground',
 			)}>
 			{label}
 		</Link>

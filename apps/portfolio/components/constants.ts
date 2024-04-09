@@ -7,13 +7,13 @@ export const navbarLinks = [
 	},
 	{
 		id: 2,
-		label: 'Who am i ?',
+		label: 'About me',
 		section: 'Description',
 		href: '#',
 	},
 	{
 		id: 3,
-		label: 'What did i do ?',
+		label: 'My projects',
 		section: 'Projects',
 		href: '#',
 	},

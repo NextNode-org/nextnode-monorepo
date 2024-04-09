@@ -34,10 +34,12 @@ const MobileNavbar = (): JSX.Element => {
 				<SheetContent
 					side="right"
 					defaultClose={false}
-					className="flex justify-evenly bg-background flex-col gap-20 py-20 text-2xl font-semibold">
-					{navbarLinks.map(link => (
-						<NavbarLink key={link.id} link={link} />
-					))}
+					className="grid place-items-center bg-background flex-col text-2xl font-semibold">
+					<div className="flex flex-col w-full justify-between items-center h-3/5">
+						{navbarLinks.map(link => (
+							<NavbarLink key={link.id} link={link} />
+						))}
+					</div>
 					<SheetContentClose
 						size="xl"
 						className="text-primary top-6 right-8"
