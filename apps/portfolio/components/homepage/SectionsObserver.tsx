@@ -2,9 +2,9 @@
 import { useSetAtom } from 'jotai'
 import { InView } from 'react-intersection-observer'
 
-import { sectionInViewAtom } from './atoms'
+import { sectionInViewAtom } from '@/components/atoms'
 
-import type { Sections } from './constants'
+import type { Sections } from '@/components/constants'
 
 interface ReactObserverProps
 	extends React.HTMLProps<HTMLDivElement>,
@@ -12,7 +12,7 @@ interface ReactObserverProps
 	name: Sections
 }
 
-const ReactObserver = ({
+const SectionsObserver = ({
 	children,
 	name,
 	...props
@@ -38,4 +38,4 @@ const ReactObserver = ({
 	)
 }
 
-export default ReactObserver
+export default SectionsObserver

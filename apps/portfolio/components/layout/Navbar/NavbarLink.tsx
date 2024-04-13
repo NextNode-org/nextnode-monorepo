@@ -16,7 +16,6 @@ const NavbarLink = ({
 	link: { id, href, section, label },
 }: LinkProps): JSX.Element => {
 	const visibleSection = useAtomValue(sectionInViewAtom)
-	console.log({ visibleSection, section })
 	return (
 		<Link
 			key={id}
