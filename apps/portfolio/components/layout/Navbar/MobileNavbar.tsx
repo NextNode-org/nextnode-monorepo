@@ -3,7 +3,6 @@
 import { useState } from 'react'
 
 import { Button, Sheet, SheetContent, SheetContentClose } from '@repo/ui'
-import { cn } from '@repo/utils/functions'
 import { Menu } from 'lucide-react'
 
 import { navbarLinks } from '@/components/constants'
@@ -19,15 +18,13 @@ const MobileNavbar = (): JSX.Element => {
 				<Button
 					size="icon"
 					variant="ghost"
-					className={cn(
-						isOpen
-							? 'bg-background focus:bg-background hover:bg-background'
-							: 'bg-accent focus:bg-accent hover:bg-accent',
-					)}
+					className={
+						'bg-background focus:bg-background hover:bg-background border border-muted '
+					}
 					onClick={() => {
 						setIsOpen(!isOpen)
 					}}>
-					<Menu className="text-foreground" />
+					<Menu className="text-primary" />
 				</Button>
 			</div>
 			<Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -35,14 +32,19 @@ const MobileNavbar = (): JSX.Element => {
 					side="right"
 					defaultClose={false}
 					className="grid place-items-center bg-background flex-col text-2xl font-semibold">
-					<div className="flex flex-col w-full justify-between items-center h-3/5">
+					<ul className="flex flex-col w-full justify-between items-center h-3/5">
 						{navbarLinks.map(link => (
-							<NavbarLink key={link.id} link={link} />
+							<li key={link.id}>
+								<NavbarLink
+									className="font-light text-primary"
+									link={link}
+								/>
+							</li>
 						))}
-					</div>
+					</ul>
 					<SheetContentClose
 						size="xl"
-						className="text-primary top-6 right-8"
+						className="text-primary top-4 rounded p-1 right-6 border border-muted"
 					/>
 				</SheetContent>
 			</Sheet>

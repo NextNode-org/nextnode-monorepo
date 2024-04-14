@@ -4,28 +4,41 @@ import Link from 'next/link'
 
 import { cn } from '@repo/utils/functions'
 import { useAtomValue } from 'jotai'
+import { motion } from 'framer-motion'
 
 import { sectionInViewAtom } from '@/components/atoms'
 
 import type { NavbarLink as LinkType } from '@/components/constants'
 
-interface LinkProps {
+interface LinkProps extends React.HTMLProps<HTMLAnchorElement> {
 	link: LinkType
 }
+
 const NavbarLink = ({
-	link: { id, href, section, label },
+	link: { href, section, label },
+	className,
+	...props
 }: LinkProps): JSX.Element => {
 	const visibleSection = useAtomValue(sectionInViewAtom)
+	const isVisible = visibleSection === section
 	return (
-		<Link
-			key={id}
-			href={href}
-			className={cn(
-				'font-semibold sm:text-xs lg:text-sm',
-				visibleSection === section ? 'text-accent' : 'text-foreground',
-			)}>
-			{label}
-		</Link>
+		<>
+			<Link
+				{...props}
+				href={href}
+				className={cn(
+					className,
+					isVisible && 'text-accent font-semibold',
+				)}>
+				{label}
+				{isVisible ? (
+					<motion.div
+						layoutId="underline"
+						className="block max-w-full h-0.5 bg-accent"
+					/>
+				) : null}
+			</Link>
+		</>
 	)
 }
 

@@ -19,7 +19,7 @@ type LayoutProps = Readonly<{
 }>
 
 const RootLayout = ({ children }: LayoutProps): JSX.Element => (
-	<html lang="en">
+	<html lang="en" className="scroll-smooth">
 		<body className={inter.className}>
 			<Header />
 			{children}

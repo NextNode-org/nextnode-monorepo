@@ -1,6 +1,7 @@
 'use client'
 import { useSetAtom } from 'jotai'
 import { InView } from 'react-intersection-observer'
+import { cn } from '@repo/utils/functions'
 
 import { sectionInViewAtom } from '@/components/atoms'
 
@@ -15,6 +16,7 @@ interface ReactObserverProps
 const SectionsObserver = ({
 	children,
 	name,
+	className,
 	...props
 }: ReactObserverProps): JSX.Element => {
 	const setVisibleSection = useSetAtom(sectionInViewAtom)
@@ -28,9 +30,13 @@ const SectionsObserver = ({
 		}
 	}
 	return (
-		<InView onChange={setInView}>
+		<InView onChange={setInView} threshold={0.8}>
 			{({ ref }) => (
-				<div {...props} id={name} ref={ref}>
+				<div
+					{...props}
+					id={name}
+					className={cn('scroll-mt-16', className)}
+					ref={ref}>
 					{children}
 				</div>
 			)}

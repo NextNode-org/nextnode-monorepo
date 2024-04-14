@@ -51,6 +51,9 @@ importers:
       '@repo/utils':
         specifier: workspace:^
         version: link:../../packages/utils
+      framer-motion:
+        specifier: ^11.0.24
+        version: 11.0.24(react-dom@18.2.0)(react@18.2.0)
       jotai:
         specifier: ^2.7.2
         version: 2.7.2(@types/react@18.2.67)(react@18.2.0)
